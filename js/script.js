@@ -7,7 +7,7 @@ const userWord = prompt("Dimmi una parola a casissimo")
 console.log(userWord);
 
 const result = palindromo(userWord , wordArray)
-console.log(wordArray);
+console.log(result);
 
 
 
@@ -22,7 +22,7 @@ console.log(wordArray);
 
 function palindromo (word , letterArray){
 
-    letterArray = []
+
     let i = 0
     while (i < word.lenght){
         const letter = word.charAt(i)
