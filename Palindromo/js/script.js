@@ -7,7 +7,7 @@ const userWord = prompt("Dimmi una parola a casissimo")
 console.log(userWord);
 
 const result = palindromo(userWord)
-console.log(result);
+alert(result);
 
 
 //! Funzioni
