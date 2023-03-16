@@ -14,7 +14,7 @@ console.log(userNumber);
 if (!userChoice.includes("pari" , "dispari")){
     alert("Scegli pari o dispari ho detto...")
 
-} else if (userNumber <= 0 || userNumber >= 6) {
+} else if (userNumber <= 0 || userNumber >= 6 || isNaN(userNumber)) {
      alert("Ti sembra un numero tra 1 e 5?")
 } else {
 
@@ -24,9 +24,9 @@ if (!userChoice.includes("pari" , "dispari")){
      console.log(result);
 
      if (userChoice === result){
-         alert("Vivrai ancora per un altro refresh...")
+         alert(`${userNumber} + ${CPUnumber} è ${result}. Vivrai ancora per un altro refresh...`)
      } else {
-        alert("Mi dispiace, hai perso....knock knock...")
+        alert( `${userNumber} + ${CPUnumber} è ${result}. Mi dispiace, hai perso....knock knock...`)
      }
  } 
 
